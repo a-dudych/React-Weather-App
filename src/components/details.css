@@ -95,4 +95,39 @@
   .section {
     margin-bottom: 30px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+.section__details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.details__card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.card-icon-value {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+  .section__details {
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=details.css.map */
